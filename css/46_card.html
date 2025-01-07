@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 250px;
+            /* border: 2px solid; */
+            box-shadow: 0 0 10px 10px rgba(219, 217, 217, 0.932);
+            position: relative;
+        }
+        .card-content{
+            text-align: center;
+        }
+        .new{
+            background-color: lightcoral;
+            width: 35px;
+            text-align: center;
+            padding: 5px;
+            /* border-radius: 5px; */
+            position: absolute;
+            right: 0;
+        }
+        .quick{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            top: 0;
+            transition: .7s;
+        }
+        .quick:hover{
+            background-color: aqua;
+        }
+        .card:hover .quick{
+            opacity: 1;
+            top: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="quick">Quick View</div>
+        <div class="new">new</div>
+        <div class="img">
+            <img height="100% " width="100%" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="">
+        </div>
+        <div class="card-content">
+            <h4>Formal Blue Shirt</h4>
+            <span>$45.66</span> <span><del>$69.46</del></span>
+        </div>
+    </div>
+    
+</body>
+</html>
