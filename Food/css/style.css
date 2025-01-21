@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* utilites */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Header {
+    background: url(/Images/Header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 30px ;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar .logo {
+    width: 70px;
+}
+.navlist {
+    list-style: none;
+}
+
+
+.navlist .list {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navlist .list .nava {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+.header-main {
+    color: #ffffff;
+    text-align: right;
+    padding: 40px 0;
+}
+.header-main .h1-header {
+    font-size: 125px;
+    font-weight: 700;
+    font-family: "Aleo";
+   
+}
+
+.header-main .p-header {
+    width: 50%;
+    margin: 30px 0 30px 50%;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.header-main .btn-header {
+    border-radius: 33px;
+    background-color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ff6f5e;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 20px;
+}
