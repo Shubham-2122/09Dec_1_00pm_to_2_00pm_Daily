@@ -15,7 +15,7 @@
     background: url(/Images/Header.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-bottom: 30px ;
+    padding-bottom: 30px;
 }
 
 .navbar {
@@ -24,9 +24,17 @@
     justify-content: space-between;
     padding: 20px 0;
 }
+
 .navbar .logo {
     width: 70px;
 }
+
+.navbar .icon-bar {
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
 .navlist {
     list-style: none;
 }
@@ -44,22 +52,26 @@
     font-weight: 400;
     font-family: "Montserrat";
 }
+
 .header-main {
     color: #ffffff;
     text-align: right;
     padding: 40px 0;
 }
+
 .header-main .h1-header {
-    font-size: 125px;
+    /*  20px,7.5vw,125px */
+    font-size: clamp(20px, 9.5vw, 125px);
     font-weight: 700;
     font-family: "Aleo";
-   
+
 }
 
 .header-main .p-header {
     width: 50%;
     margin: 30px 0 30px 50%;
     font-size: 30px;
+    font-size: clamp(16px, 3.5vw, 30px);
     font-weight: 400;
     font-family: "Montserrat";
 }
@@ -67,11 +79,71 @@
 .header-main .btn-header {
     border-radius: 33px;
     background-color: #ffffff;
-    font-size: 25px;
+    font-size: clamp(16px, 3.5vw, 25px);
     text-transform: uppercase;
     color: #ff6f5e;
     font-weight: 700;
     font-family: "Montserrat";
     text-align: center;
     padding: 10px 20px;
+    border: none;
+}
+
+#sec1 {
+    background-color: #ffe2c6;
+    padding: 40px 0;
+}
+
+.team-content {
+    color: #ff6f5e;
+    text-align: center;
+}
+
+.our-h2 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Aleo";
+}
+
+.our-p {
+    font-size: clamp(16px, 3.5vw, 25px);
+    font-weight: 400;
+    font-family: "Montserrat";
+    width: 50%;
+    margin: 20px auto;
+}
+
+.team .row {
+    display: flex;
+}
+
+.team .row .col {
+    width: 33.33%;
+}
+
+.card {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card .card-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.card-content {
+    font-family: "Montserrat";
+    color: #ff6f5e;
+}
+
+.card-content .card-h4 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card-content .card-p {
+    font-size: 17px;
+    font-weight: 400;
+    width: 50%;
+    margin: 10px auto;
 }
