@@ -171,10 +171,12 @@
     width: 400px;
     margin: 0 auto;
 }
-.burger-content{
+
+.burger-content {
     color: #ff6f5e;
     padding: 30px;
 }
+
 .burger-content .sec2-h2 {
     font-size: clamp(20px, 7.9vw, 75px);
     font-weight: 700;
@@ -200,4 +202,67 @@
     background-color: #ff6f5e;
     border: none;
     padding: 10px 20px;
+}
+
+#footer {
+    background-color: black;
+    padding: 70px 0;
+    color: white;
+}
+.footer1{
+    padding: 50px 0;
+}
+
+#footer .row {
+    display: flex;
+}
+
+#footer .row .col-40 {
+    width: 40%;
+}
+
+#footer .row .col-60 {
+    width: 60%;
+ 
+}
+
+.col-60 .row .col {
+    width: 33.33%;
+}
+
+.foot-h3 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Aleo";
+}
+
+.foot-ul {
+    list-style: none;
+
+}
+.foot-ul{
+    margin-top: 10px;
+}
+.foot-ul .foot-li{
+    margin: 10px 0;
+}
+.foot-ul .foot-li .foot-a {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+.foot-p{
+    width: 80%;
+    margin: 10px 0;
+font-size: 24px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+}
+.foot-icon i{
+    font-size: 30px;
+    letter-spacing: 8px;
 }
