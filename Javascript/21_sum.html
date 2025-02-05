@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <button onclick="add()">sum data</button>
+
+    <button onclick="sub()">sub</button>
+
+    <script>
+        function add(){
+            let a =20,b=10;
+            let sum = a+b
+            console.log("sum =>",sum)
+            // document.write("sum =>",a+b)
+            // document.getElementById("h1").innerHTML = sum
+            let h1_tag =  document.getElementById("h1")
+            h1_tag.innerHTML = sum
+        
+        }
+
+        function sub(){
+            let a = 20,b=10;
+            let sub = a-b 
+            console.log("sub =>",sub)
+            document.getElementById("h1").innerHTML = sub
+        }
+        
+
+    </script>
+
+</body>
+</html>
