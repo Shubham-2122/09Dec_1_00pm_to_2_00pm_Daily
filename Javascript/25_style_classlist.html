@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addc{
+           background: linear-gradient(red,green,blue); 
+           padding: 50px;
+           font-size: 50px;
+           font-weight: bolder;
+           color: white;
+           width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        hello javscript
+    </div>
+
+    <br><br>
+    <button onclick="addcss()">Add css</button>
+
+    <button onclick="removecss()">Remove css</button>
+
+    <button onclick="togglecss()">Toggle css</button>
+
+    <script>
+
+        let main_tag = document.getElementById("main")
+
+        function addcss(){
+            main_tag.classList.add("addc")
+            console.log("add css")
+        }
+
+        function removecss(){
+            main_tag.classList.remove("addc")
+            console.log("remove css")
+        }
+
+        function togglecss(){
+            main_tag.classList.toggle("addc")
+        }
+
+    </script>
+
+</body>
+</html>

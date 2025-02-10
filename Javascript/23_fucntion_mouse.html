@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onmouseenter="chnagename()" onmouseleave="chnegmouse()">Hello javscript</h1>
+
+    <button onclick="chnagename()">Chnage name</button>
+    <script>
+
+        function chnagename(){
+            console.log("data")
+            document.getElementById("h1").innerText = "hello World..!"
+        }
+        function chnegmouse(){
+            document.getElementById("h1").innerHTML = "<i>Hello javscript</i>"
+        }
+
+    </script>
+</body>
+</html>

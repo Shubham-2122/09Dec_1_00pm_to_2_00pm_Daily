@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">hello this data style</h1>
+
+    <button onclick="chnagestyle()">Chnage style</button>
+
+    <button onclick="chnagestyle1()">orignal css</button>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1")
+
+        // javscript css
+        function chnagestyle(){
+            h1_tag.style.background = "red";
+            h1_tag.style.padding = "40px";
+            h1_tag.style.fontSize = "50px";
+            h1_tag.style.color = "green"
+        }
+
+        function chnagestyle1(){
+            h1_tag.style.background = "white";
+            h1_tag.style.padding = "0px";
+            h1_tag.style.fontSize = "36px";
+            h1_tag.style.color = "black"
+        }
+
+
+    </script>
+</body>
+</html>
