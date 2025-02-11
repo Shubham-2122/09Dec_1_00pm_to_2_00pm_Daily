@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return handlesubmit()">
+        <div>
+            <input type="text" placeholder="Enter your name" id="name">
+            <span id="nmerr"></span>
+        </div>
+        <div>
+            <input type="email" placeholder="Enter your email" id="email">
+            <span id="emerr"></span>
+        </div>
+        <div>
+            <input type="tel" placeholder="Enter your phone" id="phone">
+            <span id="pherr"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your password" id="password">
+            <span id="psw"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your cpassword" id="cpassword">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+
+    <script>
+
+      let name_tag = document.getElementById("name")
+      let nmerr = document.getElementById("nmerr")
+      let email_tag = document.getElementById("email")
+      let emerr = document.getElementById("emerr")
+      let phone_tag = document.getElementById("phone")
+      let pherr = document.getElementById("pherr")
+      let password_tag = document.getElementById("password")
+      let psw = document.getElementById("psw")
+      let cpassword = document.getElementById("cpassword")
+      console.log(name_tag)
+      console.log(nmerr)
+
+      function handlesubmit(){
+        if(name_tag.value == "" || name_tag.value == null){
+            console.log("Pls name required..!");
+            nmerr.innerHTML = "Pls name required..!";
+            nmerr.style.color = "red";
+            return false;
+        }
+        else{
+            nmerr.innerHTML = "";
+        }
+
+        if(email_tag.value == "" || email_tag.value == null){
+            console.log("Pls Email required..!");
+            emerr.innerHTML = "Pls Email required..!";
+            emerr.style.color = "red";
+            return false
+        }
+        else{
+            emerr.innerHTML = "";
+        }
+
+        if(phone_tag.value == "" || phone_tag.value == null){
+            console.log("Pls phone required..!");
+            pherr.innerHTML = "Pls phone required..!";
+            pherr.style.color = "red";
+            return false
+        }
+        else{
+            pherr.innerHTML = "";
+        }
+
+        if(password_tag.value == "" || password_tag.value == null){
+            console.log("Pls Password required..!");
+            psw.innerHTML = "Pls Password required..!";
+            psw.style.color = "red";
+            return false
+        }
+        else{
+            psw.innerHTML = "";
+        }
+
+        if(password_tag.value != cpassword.value){
+            alert("password does not match..!")
+            return false
+        }
+      }
+
+    </script>
+</body>
+</html>
