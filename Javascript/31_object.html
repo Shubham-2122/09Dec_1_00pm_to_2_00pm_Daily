@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object ;- collection of multiple value store in single varible {}
+    key and value 
+    key defined -->
+<!-- 
+    syntax ;- 
+    let obj = {
+        key : "value"
+    } -->
+
+
+    <script>
+        let person = {
+            name : "Tushar",
+            age : 24,
+            course : "Front-end"
+        }
+
+        // console.log(person.course)
+        // console.log(person.name)
+        // console.log(person.age)
+        // document.write(person.name)
+        // document.write(person)
+
+        for(let data in person){
+            console.log(data)
+            console.log(person[data])
+        }
+
+
+        let person1 =  { 
+            name : "rushi",
+            age : 25,
+            course : {
+                front : "Front-end",
+                back : "back-end",
+                full : "full-stcak"
+            }
+        }
+
+        console.log(person1)
+        console.log(person1.course.full)
+
+    </script>
+</body>
+</html>

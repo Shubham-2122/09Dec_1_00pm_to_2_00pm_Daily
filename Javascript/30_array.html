@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- non - primitive datatype :- array and object  -->
+
+    <!-- array :- collection of multiple value store in single varibale. []
+    start with index 0 
+    index and value  -->
+
+    <!-- syntax:- 
+    let arr = [asd,243323,4234,23423,234 ] -->
+
+    <script>
+
+        let arr = [1,2,3,4,5,6,7,8,9,10,"sban",'sdj']
+
+        console.log(arr)
+
+        // value[index]
+        console.log(arr[0])
+        console.log(arr[5])
+        console.log(arr[10])
+
+        // document.write(arr[5])
+        // document.write(arr)
+
+        // for(let i=0;i<arr.length;i++){
+        //     // i => index
+        //     // console.log(i)
+        //     console.log(arr[i])
+        //     document.write(i,"=>value=>",arr[i],"<br>")
+        // }
+
+        // for of 
+        // for(let data of arr){
+        //     // direct value print
+        //     console.log(data)
+        //     document.write(data,"<br>")
+        // }
+
+        // for in 
+
+        for(let data in arr){
+            // index 
+            // value[index]
+            // console.log(data)
+            console.log(arr[data])
+            document.write(arr[data],"<br>")
+        }
+
+
+        let arr1 = [1,2,3,4,5,[6,7,8,9],10,11]
+        console.log(arr1)
+        console.log(arr1[3])
+        console.log(arr1[5][2])
+
+
+    </script>
+
+</body>
+</html>
