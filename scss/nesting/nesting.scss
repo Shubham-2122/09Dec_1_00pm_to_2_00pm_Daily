@@ -1,0 +1,36 @@
+$bg-color : lightcoral;
+$color : black;
+
+// nesting
+.nav{
+    list-style: none;
+    li{
+        display: inline-block;
+        background-color: $bg-color;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+            color: $color;
+        }
+        &:hover{
+            background-color: aqua;
+        }
+        &:hover a{
+            color: $bg-color;
+        }
+    }
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    li{
+        background-color: $color;
+        padding: 10px 20px;
+        margin-right: 10px;
+        a{
+            text-decoration: none;
+            color: $bg-color;
+        }
+    }
+}

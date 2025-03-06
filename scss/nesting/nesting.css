@@ -1,0 +1,32 @@
+.nav {
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px 20px;
+}
+.nav li a {
+  text-decoration: none;
+  color: black;
+}
+.nav li:hover {
+  background-color: aqua;
+}
+.nav li:hover a {
+  color: lightcoral;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  background-color: black;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.list li a {
+  text-decoration: none;
+  color: lightcoral;
+}/*# sourceMappingURL=nesting.css.map */
