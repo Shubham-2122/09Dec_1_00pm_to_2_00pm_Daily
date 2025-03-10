@@ -1,0 +1,9 @@
+
+@use 'base';
+@use 'Footer';
+
+
+h1{
+    background-color: base.$bg-color;
+    color: base.$color;
+}

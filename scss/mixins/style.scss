@@ -1,0 +1,47 @@
+// without para
+@mixin border(){
+    border: 2px solid red;
+}
+
+// with para
+@mixin border2($size,$color){
+    border: $size solid $color
+}
+
+// flex 
+@mixin flex($data){
+    display: flex;
+    justify-content: $data
+}
+
+h1{
+    @include border();
+}
+h2{
+    @include border()
+}
+
+h3{
+    @include border2(5px,blue);
+}
+
+.main{
+    @include border2(10px,rgba(0,0,0,0.7) )
+}
+
+.main2{
+    @include flex(space-between);
+    @media only screen and (max-width:992px) {
+        @include flex(center)
+    }
+    @media only screen and (max-width:576px) {
+        display: block;
+  
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        @include border();
+        margin: 0 auto;
+    }
+}
