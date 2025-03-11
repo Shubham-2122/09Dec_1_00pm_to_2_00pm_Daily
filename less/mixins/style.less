@@ -1,0 +1,40 @@
+// without para
+.border(){
+    border:  2px solid red;
+}
+
+// with para use
+.border2(@size,@color){
+    border: @size solid @color;
+}
+
+.flex(@data){
+    display: flex;
+    justify-content: @data;
+}
+
+h1{
+    .border();
+}
+
+h2{
+    .border();
+}
+
+h3{
+    .border2(10px, blue)
+}
+
+.main{
+    background-color: lightcoral;
+    .border2(5px , green)
+}
+
+.main2{
+    .flex(space-between);
+    .box {
+        height: 200px;
+        width: 200px;
+        .border();
+    }
+}

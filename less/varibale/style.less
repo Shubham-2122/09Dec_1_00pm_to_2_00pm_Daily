@@ -1,0 +1,20 @@
+
+// @varibalename : value
+@bg-color : red;
+@color : white;
+@size : 50px;
+@data : @size - 25px;
+
+h1{
+    background-color: @bg-color;
+    color: @color;
+    padding: @size;
+}
+
+.main{
+    background-color: @bg-color;
+    color: @color;
+    // font-size: @size;
+
+    font-size: @data;
+}
