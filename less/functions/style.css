@@ -1,0 +1,11 @@
+h1 {
+  color: red;
+  background-color: aqua;
+  padding: 10px;
+}
+h2 {
+  background: hsl(255, 80%, 50%);
+}
+h3 {
+  background: hsl(255, 50%, 50%);
+}

@@ -1,0 +1,30 @@
+@bg-color:red;
+
+.list{
+    li{
+        display: inline-block;
+        background-color: lightcoral;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            background-color: lightgreen;
+        }
+    }
+}
+
+.dlist{
+    display: flex;
+    list-style: none;
+    li{
+        background-color: @bg-color;
+        padding: 10px 20px;
+        margin-right: 5px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+// #
+#bundle(){
+    .btn{
+        background: linear-gradient(red,green);
+        color: white;
+        padding: 10px 20px;
+        border: 2px solid black;
+        font-size: 30px;
+        &:hover{
+            background: lightcoral;
+        }
+    }
+    .btn2{
+        background: linear-gradient(red,green,blue);
+        color: white;
+        padding: 10px 20px;
+        border: 2px solid black;
+        font-size: 30px;
+        &:hover{
+            background: darkcyan;
+        }
+    }
+}
+
+.btn{
+    #bundle.btn();
+}
+.btn2{
+    #bundle.btn2();
+}

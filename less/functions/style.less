@@ -1,0 +1,16 @@
+@data : red;
+
+h1{
+    color: if((iscolor(@data)),@data,blue);
+    background-color: aqua;
+    padding: if((2<1),40px,10px);
+}
+
+h2{
+    // background: hsl(255,50%,50%);
+    background: saturate(hsl(255,50%,50%),30%);
+}
+
+h3{
+    background: hsl(255,50%,50%);
+}

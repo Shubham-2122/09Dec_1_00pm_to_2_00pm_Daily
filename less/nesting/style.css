@@ -1,0 +1,25 @@
+.list li {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px 20px;
+}
+.list li a {
+  text-decoration: none;
+  color: white;
+}
+.list li:hover {
+  background-color: lightgreen;
+}
+.dlist {
+  display: flex;
+  list-style: none;
+}
+.dlist li {
+  background-color: red;
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+.dlist li a {
+  text-decoration: none;
+  color: black;
+}
