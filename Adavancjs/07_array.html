@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let arr = [1,2,3,4,5,6,7,"sdf","sadf",34,4,"sdf"]
+        console.log(arr)
+
+        console.log(arr.length)
+        let arr1 = [1,2,3,4,5]
+        let arr2 = [6,7,8,9,10]
+
+        // arra join
+        console.log(arr1.concat(arr2))
+
+
+        // affter add
+        arr1.push(6)
+        console.log(arr1)
+        
+        // affter remove
+        arr1.pop()
+        console.log(arr1)
+
+
+        // before remove elemet
+        arr1.shift()
+        console.log(arr1)
+
+        // before add element
+        arr1.unshift(1)
+        console.log(arr1)
+
+        let data = ["ant", "bison", "camel", "duck", "elephant" ]
+        console.log(data.length)
+        
+        // start 2
+        // console.log(data.slice(2))
+
+        console.log(data.slice(2,5))
+
+        const elements = ["Fire", "Air", "Water"];
+        console.log(elements)
+        console.log(elements.join())
+        console.log(elements.join(""))
+        console.log(elements.join("="))
+
+        console.log(elements.indexOf("Air"))
+
+
+        let data1 = ["shubham","Rushit","Himani","Brijesh patel","Vishu"]
+        console.log(data1)
+
+
+        const res  = data1.filter((word) => word.length > 5)
+        console.log(res)
+
+
+    </script>
+</body>
+</html>

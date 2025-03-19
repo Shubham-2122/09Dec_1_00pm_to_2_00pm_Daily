@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class:- class simple data member(varible) and menber function(fuction) class   -->
+        <!-- :- class is blue print of object  -->
+
+        <!-- syntax :- 
+        class class-name{
+            memeber function
+            function name(){
+                data me,ber
+                let name = "asd"
+            }
+            function name(){
+                data me,ber
+                let name = "asd"
+            }
+        }
+
+        let obj = new class-name -->
+
+        <script>
+
+            class Bank{
+                // member function
+                x = function deatils(pin,blance){
+                    // data member
+                    let Bankname = "HDFC";
+                    let BankIFC = "HDFC002A";
+                    let Bankpin = pin;
+                    let bankblace = blance;
+
+
+                    console.log("bankname :- ",Bankname)
+                    console.log("bankIFC :- ",BankIFC)
+                    console.log("Bankpin :- ",Bankpin)
+                    console.log("bankblace :- ",bankblace)
+
+                }
+
+                y = function windowdata(){
+                    console.log("windhrowdata atm")
+                }
+
+            }            
+
+            // console.log(Bank)
+            let brijesh = new Bank;
+            console.log(brijesh)
+            brijesh.y()
+            brijesh.x(123,4000)
+            
+            let Himani = new Bank;
+            console.log(Himani)
+            Himani.x(234,5000)
+            Himani.y()
+
+
+        </script>
+
+</body>
+</html>

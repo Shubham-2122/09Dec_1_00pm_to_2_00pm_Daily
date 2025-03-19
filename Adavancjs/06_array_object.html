@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // arra inner object allow
+
+        let arr = [1,2,3,4,5,{
+            name:"shubham",
+            age:24,
+            course :"MERN-STACK"
+        },3,45,]
+
+        console.log(arr)
+
+        console.log(arr[5].name)
+
+
+        // object innner array
+
+        let person = {
+            name :"data",
+            age:34,
+            course : [
+                "Front-end",
+                "back-end",
+                "Full-stack"
+            ],
+        }
+
+        console.log(person.course[0])
+
+    </script>
+</body>
+</html>
