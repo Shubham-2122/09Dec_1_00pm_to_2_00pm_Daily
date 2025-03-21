@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // this keyword :- construtor varible coman this access
+
+        class artih{
+            constructor(a,b){
+                // data memeber
+                this.a = a;
+                this.b = b;
+                console.log("const data")
+            }
+
+            x = function sum(){
+                document.write(`sum data => ${this.a + this.b} <br>`)
+            }
+
+            y = function sub(){
+                document.write(`sub data => ${this.a - this.b}`)
+            }
+
+        }
+
+        let ob = new artih(40,20)
+        console.log(ob)
+        ob.x()
+        console.log(ob.a)
+        ob.y()
+    </script>
+</body>
+</html>

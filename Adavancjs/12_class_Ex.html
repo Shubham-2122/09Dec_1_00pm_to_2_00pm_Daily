@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class arth{
+            // store
+            x = function sum(){
+                let a=20,b=10;
+                console.log("sum =>",a+b)
+            }
+            y = function sub(a,b){
+                console.log("sub =>",a-b)
+            }
+            // function
+            mul(){
+                let a=30,b=10;
+                console.log("mul =>",a*b)
+            }
+            divi(a,b){
+                console.log("division =>",a/b)
+            }
+        }
+
+        // console.log(arth)
+
+        let obj = new arth
+        obj.x()
+        obj.y(30,10)
+        console.log(obj)
+        obj.mul()
+        obj.divi(40,10)
+
+    </script>
+</body>
+</html>

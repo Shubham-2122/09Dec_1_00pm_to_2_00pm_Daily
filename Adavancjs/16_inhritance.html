@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inhritance :- one property to another property  -->
+<!-- 
+    1) single 
+    2) muti - level
+    3) mutiple 
+    4) hirachical 
+    5) hybrid   -->
+
+
+    <!-- syntax :- 
+    class A{
+
+    }
+    class b extend A{
+        poerty
+    }
+
+    let b=  new b  -->
+
+    <script>
+
+        // single level inhritance
+        class A{
+            x= function details(){
+                console.log("x data print")
+                document.write("x data print <br>")
+            }
+            y = function details2(){
+                console.log("y data print")
+                document.write("y data print <br>")
+            }
+        }
+
+        class B extends A{
+            z = function data(){
+                console.log("Z data print ")
+                document.write("Z data print <br>")
+            }
+            
+        }
+        let obj = new B 
+        obj.z()
+        obj.x()
+        obj.y()
+
+
+    </script>
+
+
+</body>
+</html>

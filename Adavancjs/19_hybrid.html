@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A {
+            x(){
+                console.log("x Fucntion call")
+                document.write("X Fucntion Call <br>")
+            }
+        }
+
+        class B extends A{
+            y(){
+                console.log("Y Fucntion call")
+                document.write("Y Fucntion call <br>")
+            }
+        }
+        class C extends A {
+            z(){
+                console.log("Z Fucntion call")
+                document.write("Z Fucntion call <br>")
+            }
+        }
+
+        class D extends B{
+            d(){
+                console.log("D Fucntion call")
+                document.write("D Fucntion call <br>")
+            }
+        }
+
+
+        let obj = new C 
+        obj.x()
+        obj.z()
+
+        let obj1 = new D
+        obj1.d()
+        obj1.x()
+        obj1.y()
+        
+    </script>
+</body>
+</html>

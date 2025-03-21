@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // muti-level inhritance
+
+        class A{
+            data(){
+                console.log("data function call")
+                document.writeln("Data function call <br>")
+            }
+        }
+        class B extends A{
+            data1(){
+                console.log("Class B access")
+                document.writeln("Class B access<br>")
+            }
+        }
+        class C extends B {
+            data2(){
+                console.log("Class C access")
+                document.writeln("Class C access <br>")
+            }
+        }
+
+        let obj = new C
+        obj.data1()
+        obj.data1()
+        obj.data()
+        obj.data2()
+    </script>
+</body>
+</html>

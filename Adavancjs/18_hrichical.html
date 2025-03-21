@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A{
+            data(){
+                console.log("data call A")
+                document.write("data call A <br>")
+            }
+        }
+        class B extends A{
+            data1(){
+                console.log("data call B")
+                document.write("data Call B <br>")
+            }
+        }
+
+        class C extends A {
+            data2(){
+                console.log("data call C");
+                document.write("data call C <br>")
+            }
+        }
+
+        let obj = new C 
+        obj.data()
+        obj.data2()
+
+        let obj1 = new B
+        obj1.data()
+        obj1.data1()
+
+    </script>
+</body>
+</html>
