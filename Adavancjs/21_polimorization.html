@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- 1) method overloading(complie time error) :- i have one class in one and more function name same but deffert parameter in same class   -->
+       <!-- 2) method Overriding(run-time error) :- i have deffert class in same function name same in deffent class  -->
+
+       <script>
+
+        // 1) method overloading 
+        // class A{
+        //     data(x){
+        //         console.log("x data found",x)
+        //     }
+        //     data(x,y){
+        //         console.log("x and y sum =>",x+y)
+        //     }   
+        // }
+
+        // let obj = new A
+        // console.log(obj)
+        // obj.data(20,10)
+
+
+        // 2) method overring 
+
+        class A{
+            data(){
+                console.log("A class call");
+            }
+        }
+
+        class B extends A{
+            data(){
+                console.log("B class Call");
+            }
+        }
+        class C extends B {
+            data(){
+                console.log("C class call");
+            }
+        }
+
+        // let obj = new C 
+        // console.log(obj)
+        // obj.data()
+        // obj.data()
+
+        // solution
+        let data = [new A(),new B(),new C()]
+        console.log(data)
+        data.forEach((user,index)=>{
+            user.data()
+        })
+
+       </script>
+</body>
+</html>
