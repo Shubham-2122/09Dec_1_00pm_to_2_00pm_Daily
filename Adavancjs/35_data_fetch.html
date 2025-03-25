@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch("loction",{method})
+    .then()
+    .then() -->
+
+    <!-- fetch : - javscript promise as object  -->
+    <!-- method :- get,post,put/patch , delete  -->
+    <!-- fetch :- data convert sting json object  -->
+
+    <!-- javscript inbuilt method fetch  -->
+
+
+
+    <script>
+    
+        fetch("data.txt",{
+            // get by defult
+            method : "GET"
+        })
+        .then((res)=>{
+            // convert string
+            return res.text()
+
+        })
+        .then((res)=>{
+            console.log(res)
+            document.write(res)
+        })
+
+    </script>
+</body>
+</html>
