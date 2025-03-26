@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json :- javscript syntax object noation -->
+    <!-- Api :- application progrm inteface -->
+
+    <!-- json vs object both  no  -->
+    <!-- {
+        "name":"himini",
+        "age" : 25
+    } -->
+
+    <!-- {
+        name : ""
+    } -->
+
+
+    <script>
+
+        let jsondata = `[
+            {
+                "id" : 1,
+                "name" :"himani",
+                "age": 24
+            },
+            {
+                 "id" : 2,
+                "name" :"vishu",
+                "age": 25
+            },
+            {
+                 "id" : 3,
+                "name" :"shubham",
+                "age": 25
+            }
+        ]`;
+
+        console.log(jsondata)
+        // document.write(jsondata)
+
+        // json data convert as object/array
+        let person = JSON.parse(jsondata)
+        console.log(person)
+
+        for(let data of person){
+            console.log(data)
+            document.write(`<h1> id :- ${data.id} name :- ${data.name} age :- ${data.age}</h1>`)
+        }
+
+
+        let ob = [
+            {
+                id : 1,
+                name :"himani",
+                age: 24
+            },
+            {
+                 id : 2,
+                name :"vishu",
+                age: 25
+            },
+            {
+                id: 3,
+                name :"shubham",
+                age: 25
+            },
+            {
+                id: 4,
+                name :"jigersir",
+                age: 36
+            }
+        ]
+
+        console.log(ob)
+
+        // object convart json
+        let json = JSON.stringify(ob)
+
+        console.log(json)
+
+    </script>
+</body>
+</html>

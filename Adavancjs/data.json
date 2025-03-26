@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Vishu",
+        "course":"Front-end"
+    },
+    {
+        "id":2,
+        "name":"Himini",
+        "course":"back-end"
+    },
+    {
+        "id":3,
+        "name":"Het",
+        "course":"Full-stack"
+    }
+]
