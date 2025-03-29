@@ -23,6 +23,7 @@
 
         const getdata= async()=>{
             const res = await axios.get("https://660d95e36ddfa2943b34c530.mockapi.io/data")
+            console.log(res)
             console.log(res.data)
             res.data.map((user)=>{
                 console.log(user)
@@ -38,12 +39,36 @@
         }
 
         // create data
-        const newdata=async()=>{
-            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/data",person)
+
+        const newdata = async()=>{
+            const res = axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/data",person)
             console.log(res.data)
         }
         // newdata()
 
+        // delete data
+        const deletedata=async()=>{
+            const res = axios.delete(`https://660d95e36ddfa2943b34c530.mockapi.io/data/42`)
+            console.log(res.data)
+        }
+        // deletedata()
+
+
+        let person1 ={
+            id:40,
+            name :"Himani patel",
+            Coruse : "Front-end",
+            state : "Gujarat",
+            mobile:"3435623423",
+            city:"ahmedabad"
+        }
+
+        // update data
+        const updatedata=async()=>{
+            const res = axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/data/${person1.id}`,person1)
+            console.log(res.data)
+        }
+        updatedata()
 
     </script>
 
