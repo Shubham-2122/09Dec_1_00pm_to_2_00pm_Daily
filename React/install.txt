@@ -1,0 +1,27 @@
+node install 
+node -v
+npm -v
+
+npm :- node package manager (global) 
+npx :- node package exsible (syatem)
+
+cmd :- npx create-react-app appname 
+cmd server :- npm start
+
+Require in react app
+1) node module (require) :- npm install
+2) Public :- index.html ,asset/image
+3) src :- index.js , app.js  html -> index.js -> app.js
+4) package.json , package-lock.json
+
+
+vite + react
+cmd -> npm create vite@latest my-react-app --template
+cmd -> npm run dev
+
+
+
+
+
+
+
