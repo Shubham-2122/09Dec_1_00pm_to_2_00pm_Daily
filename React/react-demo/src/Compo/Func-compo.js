@@ -3,8 +3,14 @@
 import React from "react";
 
 function Func_compo(){
+
+    let name = "vishu"
+
     return(
-        <h1>hello this Function Compo</h1>
+        <div>
+            <h1>hello this Function Compo</h1>
+            <h2>Hello h2 tag {name}</h2>
+        </div>
     )
 }
 export default  Func_compo;

@@ -1,10 +1,12 @@
 import React from "react"
+import Hello from "./Hello"
 
 function App() {
 
   return (
     <>
-      <h1>hello app compo 2</h1>
+    <h2>hello this tag</h2>
+    <Hello />
     </>
   )
 }
