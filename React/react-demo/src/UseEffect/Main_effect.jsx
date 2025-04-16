@@ -1,6 +1,8 @@
 import React from 'react'
 import Useeffct from './Useeffct'
 import Usetable from './Usetable'
+import Useraxios from './Useraxios'
+import Carddata from './Carddata'
 
 function Main_effect() {
 
@@ -8,7 +10,9 @@ function Main_effect() {
   return (
     <div>
       {/* <Useeffct /> */}
-      <Usetable />
+      {/* <Usetable /> */}
+      {/* <Useraxios /> */}
+      <Carddata />
     </div>
   )
 }
