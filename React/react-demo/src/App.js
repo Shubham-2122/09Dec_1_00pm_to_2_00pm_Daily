@@ -5,6 +5,9 @@ import Main_State from "./state/Main_State"
 import Form from "./form_hadling/Form"
 import Form_object from "./form_hadling/Form_object"
 import Main_effect from "./UseEffect/Main_effect"
+import UseLife from "./lifecycle/UseLife"
+import UseLifefun from "./lifecycle/UseLifefun"
+import UseRedu from "./hooks/UseRedu"
 // import Hello from "./Jsx/Hello"
 // import Class_compo from "./Compo/Class-compo"
 // import Func_compo from "./Compo/Func-compo"
@@ -28,7 +31,12 @@ function App() {
             {/* <Form /> */}
             {/* <Form_object /> */}
 
-            <Main_effect />
+            {/* <Main_effect /> */}
+            {/* <UseLife /> */}
+            {/* <UseLifefun /> */}
+
+            <UseRedu />
+
      
         </div>
     )
