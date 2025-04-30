@@ -16,6 +16,7 @@ import Help from "./layout/Pages/Help"
 import About1 from "./layout/Pages/About1"
 import About2 from "./layout/Pages/About2"
 import Not from "./layout/Pages/Not"
+import Driiling from "./Drilling/Driiling"
 // import Hello from "./Jsx/Hello"
 // import Class_compo from "./Compo/Class-compo"
 // import Func_compo from "./Compo/Func-compo"
@@ -54,6 +55,7 @@ function App() {
                     </Route>
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/help" element={<Help />} />
+                    <Route path="/context" element={<Driiling />} />
 
 
                     {/* not found call */}
