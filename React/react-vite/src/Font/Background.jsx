@@ -24,7 +24,7 @@ function Background() {
             <div className='bg-linear-to-r from-orange-400 via-blue-500 to-red-400 text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
             </div>
-            <div className='bg-linear-to-r from-orange-400 via-slate-700 via-green-400 to-red-400 text-white'>
+            <div className='bg-linear-to-r from-orange-400  via-green-400 to-red-400 text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
             </div>
 
