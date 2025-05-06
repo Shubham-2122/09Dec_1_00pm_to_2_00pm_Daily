@@ -15,9 +15,9 @@ function App() {
       {/* <Hello /> */}
       {/* <Font /> */}
       {/* <Background /> */}
-      {/* <Space /> */}
-      {/* <Width /> */}
-      {/* <Border /> */}
+      <Space />
+      <Width />
+      <Border />
       <Fillter />
     </>
   )
