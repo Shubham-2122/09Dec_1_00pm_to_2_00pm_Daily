@@ -18,6 +18,25 @@ function Background() {
             <div className='bg-neutral-500 text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
             </div>
+            <div className='bg-linear-to-r from-orange-400 to-red-400 text-white'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
+            </div>
+            <div className='bg-linear-to-r from-orange-400 via-blue-500 to-red-400 text-white'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
+            </div>
+            <div className='bg-linear-to-r from-orange-400 via-slate-700 via-green-400 to-red-400 text-white'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt eaque vero odio iure eum sequi dolorum optio recusandae earum sit nam voluptates, repellendus quibusdam? Eveniet beatae aliquid modi. Doloribus?
+            </div>
+
+            <div className='size-52 bg-radial rounded-full from-pink-400 from-40% to-fuchsia-700'>
+
+            </div>
+            <div className='size-52  rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%'>
+
+            </div>
+            <div className='size-52 bg-radial rounded-full from-pink-400 from-40% to-fuchsia-700'>
+
+            </div>
         </div>
     )
 }
