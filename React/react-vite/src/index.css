@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+/* tag apply tag  */
+@layer base{
+    h1{
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+    h2{
+        font-style: italic;
+    }
+}
+
+/* compoent silder css resuse */
+@layer components{
+    .card{
+        height: 300px;
+        width: 200px;
+        box-shadow: 0 0 10px 5px black;
+        border-radius: 10px;
+    }
+    .card1{
+        height: 300px;
+        width: 200px;
+        box-shadow: 0 0 10px 5px rgb(187, 98, 98);
+        border-radius: 10px;
+    }
+}
+
+/* create padding, margin font */
+@layer utilities{
+    .pdd{
+        padding: 30px;
+    }
+    .font{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

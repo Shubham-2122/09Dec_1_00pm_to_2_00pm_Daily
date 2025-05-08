@@ -6,6 +6,9 @@ import Space from "./Font/Space"
 import Width from "./Font/Width"
 import Border from "./Font/Border"
 import Fillter from "./Font/Fillter"
+import Flex from "./Font/Flex"
+import Grid from "./Font/Grid"
+import Data from "./Font/Data"
 
 function App() {
 
@@ -15,10 +18,16 @@ function App() {
       {/* <Hello /> */}
       {/* <Font /> */}
       {/* <Background /> */}
-      <Space />
-      <Width />
-      <Border />
-      <Fillter />
+      {/* <Space /> */}
+
+      {/* <Width /> */}
+      {/* <Border /> */}
+      {/* <Fillter /> */}
+      {/* <Flex /> */}
+      {/* <Grid /> */}
+
+    <Data />
+
     </>
   )
 }
