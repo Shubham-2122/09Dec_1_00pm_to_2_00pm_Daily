@@ -1,14 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Header() {
-    return (
-        <div>
-            {/* Header Start */}
-            <div className="container-fluid bg-dark px-0">
+function Aheader() {
+  return (
+    <div>
+      <div className="container-fluid bg-dark px-0">
                 <div className="row gx-0 wow fadeIn" data-wow-delay="0.1s">
                     <div className="col-lg-3 bg-primary d-none d-lg-block">
-                        <NavLink to="/" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <NavLink to="/dash" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                             <h1 className="m-0 display-4 text-white text-uppercase">Chefer</h1>
                         </NavLink>
                     </div>
@@ -28,7 +27,7 @@ function Header() {
                             </div>
                         </div>
                         <nav className="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style={{ background: '#111111' }}>
-                            <NavLink to="/" className="navbar-brand d-block d-lg-none">
+                            <NavLink to="/dash" className="navbar-brand d-block d-lg-none">
                                 <h1 className="m-0 display-4 text-primary text-uppercase">Chefer</h1>
                             </NavLink>
                             <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -36,7 +35,7 @@ function Header() {
                             </button>
                             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div className="navbar-nav mr-auto py-0">
-                                    <NavLink to="/" className="nav-item nav-link ">Home</NavLink>
+                                    <NavLink to="/dash" className="nav-item nav-link ">Dashboard</NavLink>
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                     <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
                                     <NavLink to="/team" className="nav-item nav-link">Chefs</NavLink>
@@ -66,10 +65,8 @@ function Header() {
                     </div>
                 </div>
             </div>
-            {/* Header End */}
-
-        </div>
-    )
+    </div>
+  )
 }
 
-export default Header
+export default Aheader
