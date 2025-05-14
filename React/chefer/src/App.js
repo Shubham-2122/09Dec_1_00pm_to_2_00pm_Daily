@@ -10,6 +10,7 @@ import Testimonial from "./Website/Pages/Testimonial";
 import Contact from "./Website/Pages/Contact";
 import Feature from "./Website/Pages/Feature";
 import Dashboard from "./Admin/Apages/Dashboard";
+import BlogsMan from "./Admin/Apages/BlogsMan";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <BrowserRouter>
       <>
         <Routes>
+          {/* website rout */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
@@ -33,6 +35,7 @@ function App() {
 
           {/* admin path */}
           <Route path="/dash" element={<Dashboard />} />
+          <Route path="/blogmanger" element={<BlogsMan />} />
 
         </Routes>
       </>

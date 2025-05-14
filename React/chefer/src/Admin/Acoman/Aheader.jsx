@@ -27,7 +27,7 @@ function Aheader() {
                             </div>
                         </div>
                         <nav className="navbar navbar-expand-lg navbar-dark p-3 p-lg-0 px-lg-5" style={{ background: '#111111' }}>
-                            <NavLink to="/dash" className="navbar-brand d-block d-lg-none">
+                            <NavLink to="" className="navbar-brand d-block d-lg-none">
                                 <h1 className="m-0 display-4 text-primary text-uppercase">Chefer</h1>
                             </NavLink>
                             <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -39,6 +39,14 @@ function Aheader() {
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                     <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
                                     <NavLink to="/team" className="nav-item nav-link">Chefs</NavLink>
+                                      <div className="nav-item dropdown">
+                                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
+                                        <div className="dropdown-menu rounded-0 m-0">
+                                            <NavLink to="/blogmanger" className="dropdown-item">blogmanag</NavLink>
+                                            <NavLink to="/addblog" className="dropdown-item">Blog ADd</NavLink>
+                                            
+                                        </div>
+                                    </div>
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                         <div className="dropdown-menu rounded-0 m-0">
