@@ -55,7 +55,7 @@ function Blog() {
                                     <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
                                         <div className="blog-item">
                                             <div className="position-relative overflow-hidden rounded-top">
-                                                <img className="img-fluid" src={data.img} style={{height:"250px"}} alt />
+                                                <img className="img-fluid" src={data.img} style={{height:"250px",width:"100%"}} alt />
                                             </div>
                                             <div className="bg-dark d-flex align-items-center rounded-bottom p-4">
                                                 <div className="flex-shrink-0 text-center text-secondary border-end border-secondary pe-3 me-3">

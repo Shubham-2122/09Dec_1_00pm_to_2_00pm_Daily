@@ -43,7 +43,7 @@ function Aheader() {
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
                                         <div className="dropdown-menu rounded-0 m-0">
                                             <NavLink to="/blogmanger" className="dropdown-item">blogmanag</NavLink>
-                                            <NavLink to="/addblog" className="dropdown-item">Blog ADd</NavLink>
+                                            <NavLink to="/blogadd" className="dropdown-item">Blog ADd</NavLink>
                                             
                                         </div>
                                     </div>

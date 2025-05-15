@@ -11,6 +11,7 @@ import Contact from "./Website/Pages/Contact";
 import Feature from "./Website/Pages/Feature";
 import Dashboard from "./Admin/Apages/Dashboard";
 import BlogsMan from "./Admin/Apages/BlogsMan";
+import Blogadd from "./Admin/Apages/Blogadd";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           {/* admin path */}
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/blogmanger" element={<BlogsMan />} />
+           <Route path="/blogadd" element={<Blogadd />} />
 
         </Routes>
       </>
