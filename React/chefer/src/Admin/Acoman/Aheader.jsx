@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 function Aheader() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/Alogin")
+        }
+    })
+
+    const logout = () => {
+        localStorage.removeItem("Aid");
+        localStorage.removeItem("Aname");
+        redirect("/Alogin")
+        toast.success("Logout Successfully")
+    }
+
     return (
         <div>
             <div className="container-fluid bg-dark px-0">
@@ -36,9 +53,7 @@ function Aheader() {
                             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div className="navbar-nav mr-auto py-0">
                                     <NavLink to="/dash" className="nav-item nav-link ">Dashboard</NavLink>
-                                    <NavLink to="/about" className="nav-item nav-link">About</NavLink>
-                                    <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
-                                    <NavLink to="/team" className="nav-item nav-link">Chefs</NavLink>
+
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
                                         <div className="dropdown-menu rounded-0 m-0">
@@ -47,7 +62,7 @@ function Aheader() {
 
                                         </div>
                                     </div>
-                                     <div className="nav-item dropdown">
+                                    <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">menu</a>
                                         <div className="dropdown-menu rounded-0 m-0">
                                             <NavLink to="/menuman" className="dropdown-item">Menumange</NavLink>
@@ -64,6 +79,37 @@ function Aheader() {
                                         </div>
                                     </div>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+
+                                    {(
+                                        () => {
+                                            if (localStorage.getItem("Aid")) {
+                                                return (
+                                                    <Link className="nav-item nav-link">hello {localStorage.getItem("Aname")}</Link>
+                                                )
+                                            }
+                                        }
+                                    )()}
+                                    
+                                    {
+                                        (
+                                            ()=>{
+                                                if(localStorage.getItem("Aid")){
+                                                    return(
+                                                         <>
+                                                             <NavLink onClick={logout} className="nav-item nav-link">Logout</NavLink>
+                                                         </>
+                                                    )
+                                                }
+                                                else{
+                                                    return(
+                                                         <>
+                                                             <NavLink to="/Alogin" className="nav-item nav-link">ALogin</NavLink>
+                                                         </>
+                                                    )
+                                                }
+                                            }
+                                        )()
+                                    }
                                 </div>
                                 <div className="d-none d-lg-flex align-items-center py-2">
                                     <a className="btn btn-outline-secondary btn-square rounded-circle ms-2" href>
