@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Aheader() {
-  return (
-    <div>
-      <div className="container-fluid bg-dark px-0">
+    return (
+        <div>
+            <div className="container-fluid bg-dark px-0">
                 <div className="row gx-0 wow fadeIn" data-wow-delay="0.1s">
                     <div className="col-lg-3 bg-primary d-none d-lg-block">
                         <NavLink to="/dash" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
@@ -39,12 +39,20 @@ function Aheader() {
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                     <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
                                     <NavLink to="/team" className="nav-item nav-link">Chefs</NavLink>
-                                      <div className="nav-item dropdown">
+                                    <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
                                         <div className="dropdown-menu rounded-0 m-0">
                                             <NavLink to="/blogmanger" className="dropdown-item">blogmanag</NavLink>
                                             <NavLink to="/blogadd" className="dropdown-item">Blog ADd</NavLink>
-                                            
+
+                                        </div>
+                                    </div>
+                                     <div className="nav-item dropdown">
+                                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">menu</a>
+                                        <div className="dropdown-menu rounded-0 m-0">
+                                            <NavLink to="/menuman" className="dropdown-item">Menumange</NavLink>
+                                            <NavLink to="/menuadd" className="dropdown-item">Menu ADd</NavLink>
+
                                         </div>
                                     </div>
                                     <div className="nav-item dropdown">
@@ -73,8 +81,8 @@ function Aheader() {
                     </div>
                 </div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Aheader

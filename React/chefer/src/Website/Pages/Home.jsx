@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Coman/Header'
 import Footer from '../Coman/Footer'
 import { Helmet } from 'react-helmet'
+import axios from 'axios'
 
 function Home() {
+
+    const [brek, setbrek] = useState([])
+    const [lunch1, setlunch1] = useState([])
+
+    useEffect(() => {
+        brekdata()
+        lunch()
+    }, [])
+
+    const brekdata = async () => {
+        const res = await axios.get("http://localhost:3000/menu?category=breakfast")
+        // console.log(res.data)
+        setbrek(res.data)
+    }
+    const lunch = async () => {
+        const res = await axios.get("http://localhost:3000/menu?category=lunch")
+        console.log(res.data)
+        setlunch1(res.data)
+    }
+
     return (
         <div>
             <Helmet>
@@ -17,7 +38,7 @@ function Home() {
                 <script src="js/main.js"></script>
             </Helmet>
 
-          
+
 
             <Header />
             <div>
@@ -208,122 +229,38 @@ function Home() {
                         <div className="tab-content">
                             <div id="tab-1" className="tab-pane fade show p-0 active">
                                 <div className="row g-0">
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-1.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-2.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-3.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-4.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-5.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-6.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-7.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-8.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
+                                    {
+                                        brek && brek.map((data,index) => {
+                                            return (
+                                                <div className="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.1s" key={index}>
+                                                    <div className="position-relative">
+                                                        <img className="img-fluid" src={data.img} style={{ height: "250px", width: "100%" }} alt />
+                                                        <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                                            {data.name}</div>
+                                                    </div>
+                                                </div>
+                                            ) 
+                                        })
+                                    }
+
                                 </div>
                             </div>
                             <div id="tab-2" className="tab-pane fade p-0">
                                 <div className="row g-0">
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-2.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-3.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-4.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-5.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-6.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-7.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-8.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-sm-6">
-                                        <div className="position-relative">
-                                            <img className="img-fluid" src="img/menu-1.jpg" alt />
-                                            <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
-                                                BBQ Chicken</div>
-                                        </div>
-                                    </div>
+                                    {
+                                        lunch1 && lunch1.map((data,index) => {
+                                            return (
+                                                <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
+                                                    <div className="position-relative">
+                                                        <img className="img-fluid" src={data.img} style={{ height: "250px", width: "100%" }} alt />
+                                                        <div className="position-absolute bottom-0 end-0 mb-4 me-4 py-1 px-3 bg-dark rounded-pill text-primary">
+                                                            {data.name}</div>
+                                                    </div>
+                                                </div>
+                                            )
+                                        })
+                                    }
+
                                 </div>
                             </div>
                             <div id="tab-3" className="tab-pane fade p-0">

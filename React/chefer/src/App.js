@@ -12,6 +12,9 @@ import Feature from "./Website/Pages/Feature";
 import Dashboard from "./Admin/Apages/Dashboard";
 import BlogsMan from "./Admin/Apages/BlogsMan";
 import Blogadd from "./Admin/Apages/Blogadd";
+import Menumanage from "./Admin/Apages/Menumanage";
+import Menupage from "./Admin/Apages/Menupage";
+import Alogin from "./Admin/Apages/Alogin";
 
 
 function App() {
@@ -37,7 +40,10 @@ function App() {
           {/* admin path */}
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/blogmanger" element={<BlogsMan />} />
-           <Route path="/blogadd" element={<Blogadd />} />
+          <Route path="/blogadd" element={<Blogadd />} />
+          <Route path="/menuman" element={<Menumanage />} />
+          <Route path="/menuadd" element={<Menupage />} />
+          <Route path="Alogin" element={<Alogin />} />
 
         </Routes>
       </>

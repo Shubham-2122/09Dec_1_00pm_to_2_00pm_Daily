@@ -5,6 +5,12 @@
       "name": "admin",
       "email": "admin@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "123456"
     }
   ],
   "user": [
@@ -34,17 +40,17 @@
     {
       "id": "1",
       "img": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "date": "01",
-      "month": "January",
-      "year": "2023",
-      "desc": "Hello this blog fruits"
+      "date": "2025-01-02",
+      "month": "JAN",
+      "year": "2025",
+      "desc": "Hello this blog fruits qwedaw ease "
     },
     {
       "id": "2",
       "img": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "date": "13",
-      "month": "Feb",
-      "year": "2020",
+      "date": "2025-04-10",
+      "month": "APRIL",
+      "year": "2023",
       "desc": "Hello this blog fruits2"
     },
     {
@@ -56,12 +62,44 @@
       "desc": "Hello this chiness data "
     },
     {
-      "id": "1747296154930",
-      "img": "https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "date": "2025-04-11",
-      "month": "APRIL",
-      "year": "2025",
-      "desc": "Hello this food data"
+      "id": "1747381283074",
+      "img": "https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "date": "2025-05-17",
+      "month": "MAY",
+      "year": "2024",
+      "desc": "sadfas dfasd fsad we wr"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "img": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "breakfast",
+      "name": "bbq"
+    },
+    {
+      "id": 2,
+      "img": "https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "lunch",
+      "name": "bbq"
+    },
+    {
+      "id": 3,
+      "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "Dinner",
+      "name": "bbq"
+    },
+    {
+      "id": 4,
+      "img": "https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "breakfast",
+      "name": "bbq"
+    },
+    {
+      "id": "1747726715421",
+      "name": "xyz",
+      "img": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "lunch"
     }
   ]
 }
