@@ -11,7 +11,7 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
@@ -68,6 +68,12 @@ function Login() {
                 return false
             }
 
+            if(user.status == "block"){
+                console.log("Account block.. contact admin..")
+                toast.error("Account block.. contact admin..");
+                return false
+            }
+
             localStorage.setItem("Uid", user.id)
             localStorage.setItem("Uname", user.name)
 
@@ -98,6 +104,8 @@ function Login() {
                                     <MDBInput value={from.password} name='password' onChange={getchange} wrapperClass='mb-4 w-100' label='Password' id='formControlLg' type='password' size="lg" />
 
                                     <MDBCheckbox name='flexCheck' id='flexCheckDefault' className='mb-4' label='Remember password' />
+
+                                    <span><Link to="/register">Signup</Link> Account</span>
 
                                     <MDBBtn size='lg'>
                                         Login

@@ -34,6 +34,13 @@
       "email": "himani@gmail.com",
       "password": "4321",
       "status": "block"
+    },
+    {
+      "id": "1748327947997",
+      "name": "sujal jadav",
+      "email": "shubham@gmail.com",
+      "password": "654321",
+      "status": "unblock"
     }
   ],
   "blog": [
@@ -72,25 +79,25 @@
   ],
   "menu": [
     {
-      "id": 1,
+      "id": "1",
       "img": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600",
       "category": "breakfast",
       "name": "bbq"
     },
     {
-      "id": 2,
+      "id": "2",
       "img": "https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600",
       "category": "lunch",
       "name": "bbq"
     },
     {
-      "id": 3,
+      "id": "3",
       "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600",
       "category": "Dinner",
       "name": "bbq"
     },
     {
-      "id": 4,
+      "id": "4",
       "img": "https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600",
       "category": "breakfast",
       "name": "bbq"

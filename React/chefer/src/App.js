@@ -17,6 +17,8 @@ import Menupage from "./Admin/Apages/Menupage";
 import Alogin from "./Admin/Apages/Alogin";
  import { ToastContainer, toast } from 'react-toastify';
 import Login from "./Website/Pages/Login";
+import Register from "./Website/Pages/Register";
+import Updatedata from "./Website/Pages/Updatedata";
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/test" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
-           <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/update" element={<Updatedata />} />
 
 
           {/* not found page */}
