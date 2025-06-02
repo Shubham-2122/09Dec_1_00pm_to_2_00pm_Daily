@@ -41,6 +41,13 @@
       "email": "shubham@gmail.com",
       "password": "654321",
       "status": "unblock"
+    },
+    {
+      "id": "1748673197159",
+      "name": "rachana patel",
+      "email": "rachana@gmail.com",
+      "password": "1234",
+      "status": "unblock"
     }
   ],
   "blog": [
@@ -61,20 +68,20 @@
       "desc": "Hello this blog fruits2"
     },
     {
-      "id": "1747296049063",
-      "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "date": "2025-05-17",
-      "month": "MAY",
-      "year": "2025",
-      "desc": "Hello this chiness data "
-    },
-    {
       "id": "1747381283074",
       "img": "https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg?auto=compress&cs=tinysrgb&w=600",
       "date": "2025-05-17",
       "month": "MAY",
       "year": "2024",
       "desc": "sadfas dfasd fsad we wr"
+    },
+    {
+      "id": "1748673455539",
+      "img": "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "date": "2025-06-07",
+      "month": "JUNE",
+      "year": "2025",
+      "desc": "Helksdfjklja sdlasduasoduajld"
     }
   ],
   "menu": [
