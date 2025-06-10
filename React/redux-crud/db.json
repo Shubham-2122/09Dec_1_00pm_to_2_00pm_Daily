@@ -1,36 +1,42 @@
 {
-    "user":[
-        {
-            "id":"1",
-            "name" : "Himani Patel",
-            "email":"himani@gmail.com",
-            "phone":"967556568"
-        },
-        {
-            "id":"2",
-            "name" : "vishu Patel",
-            "email":"vishu@gmail.com",
-            "phone":"767675788"
-        },
-         {
-            "id":"3",
-            "name" : "Shubham jadav",
-            "email":"shubham@gmail.com",
-            "phone":"98776755"
-        }
-    ],
-    "admin":[
-        {
-            "id":"1",
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "phone":"767656565"
-        },
-        {
-            "id":"2",
-            "name":"admin2",
-            "email":"admin2@gmail.com",
-            "phone":"8765456565"
-        }
-    ]
+  "user": [
+    {
+      "id": "1",
+      "name": "Himani Patel",
+      "email": "himani@gmail.com",
+      "phone": "967556568"
+    },
+    {
+      "id": "2",
+      "name": "vishu Patel",
+      "email": "vishu@gmail.com",
+      "phone": "767675788"
+    },
+    {
+      "id": "3",
+      "name": "Shubham jadav",
+      "email": "shubham@gmail.com",
+      "phone": "98776755"
+    },
+    {
+      "id": "1749453000377",
+      "name": "sujal1",
+      "email": "sujal@gmail.com",
+      "phone": "236786123"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "phone": "767656565"
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "phone": "8765456565"
+    }
+  ]
 }
